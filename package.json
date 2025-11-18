@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-signature-canvas": "^1.0.7",
+    "html-to-image": "^1.11.13",
+    "jspdf": "^3.0.3",
     "next": "^15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-signature-canvas": "^1.1.0-alpha.2",
     "tailwindcss": "^4.0.15"
   },
   "devDependencies": {
