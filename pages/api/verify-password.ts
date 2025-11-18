@@ -26,6 +26,14 @@ export default function handler(
   }
 
   if (password === correctPassword) {
+    const expiryDate = new Date();
+    expiryDate.setDate(expiryDate.getDate() + 30);
+    
+    res.setHeader(
+      'Set-Cookie',
+      `form_authenticated=true; Path=/; Expires=${expiryDate.toUTCString()}; HttpOnly; Secure; SameSite=Strict`
+    );
+    
     return res.status(200).json({ success: true });
   } else {
     return res.status(401).json({ success: false, message: 'Incorrect password' });

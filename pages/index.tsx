@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { jsPDF } from "jspdf";
 import { toPng } from "html-to-image";
@@ -38,9 +38,29 @@ const Home: NextPage = () => {
   });
 
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isCheckingAuth, setIsCheckingAuth] = useState(true);
   const [passwordInput, setPasswordInput] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [isVerifying, setIsVerifying] = useState(false);
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      try {
+        const response = await fetch("/api/check-auth");
+        const data = await response.json();
+        
+        if (data.authenticated) {
+          setIsAuthenticated(true);
+        }
+      } catch (error) {
+        console.error("Error checking authentication:", error);
+      } finally {
+        setIsCheckingAuth(false);
+      }
+    };
+    
+    checkAuth();
+  }, []);
   const [isPreview, setIsPreview] = useState(false);
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
   const [signatureData, setSignatureData] = useState<string>("");
@@ -127,6 +147,21 @@ const Home: NextPage = () => {
       setIsGeneratingPDF(false);
     }
   };
+
+  if (isCheckingAuth) {
+    return (
+      <div style={{ backgroundColor: "#f0f0f0", minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Head>
+          <title>Self-Declaration Form</title>
+          <meta name="description" content="Self-Declaration Form for HOF" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <div style={{ textAlign: "center" }}>
+          <p style={{ fontSize: "18px", color: "#666" }}>Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   if (!isAuthenticated) {
     return (

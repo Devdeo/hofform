@@ -1,6 +1,12 @@
 # Overview
 
-This is a Next.js application built with TypeScript that generates self-declaration forms. The application allows users to fill out a form with personal information, capture a digital signature, and export the completed form as a PDF document. It's designed to create A4-sized declaration documents with proper formatting and styling.
+This is a Next.js application built with TypeScript that generates self-declaration forms. The application is password-protected and allows authenticated users to fill out a form with personal information, capture a digital signature, and export the completed form as a PDF document. It's designed to create A4-sized declaration documents with proper formatting and styling.
+
+**Recent Changes (November 18, 2025)**:
+- Added password protection using server-side authentication
+- Implemented cookie-based session persistence (30-day expiry)
+- Users authenticate once and remain logged in for 30 days
+- Blue signature color for form signatures
 
 # User Preferences
 
@@ -103,6 +109,17 @@ Form validation and submission logic appears to be in development (incomplete in
 - Custom Next.js config to allow Replit dev origins
 - Development server runs on port 3000, bound to 0.0.0.0
 
-## Notable Absence
+## Authentication System
 
-No backend database, authentication system, or external API integrations are present. The application is entirely client-side focused with no data persistence beyond PDF generation.
+**Password Protection**: Server-side verification with cookie-based persistence
+- **Implementation**: API route `/api/verify-password` validates password against `FORM_PASSWORD` environment variable
+- **Session Management**: 30-day cookie (`form_authenticated`) stored with SameSite=Strict flag
+- **Security**: Password never exposed to client; verification happens server-side only
+- **User Experience**: Users authenticate once and remain logged in for 30 days
+
+## Security Features
+
+- **Environment Variables**: Sensitive password stored in Replit Secrets as `FORM_PASSWORD`
+- **Server-side Validation**: Password verification happens via API route, never in client code
+- **Cookie Security**: Authentication cookie set with 30-day expiry and SameSite=Strict flag
+- **No Data Persistence**: Form data is not stored on server; only exists in client state and exported PDFs
