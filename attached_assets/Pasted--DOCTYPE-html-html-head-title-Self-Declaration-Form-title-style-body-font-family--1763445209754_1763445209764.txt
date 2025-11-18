@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Self-Declaration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  .container {
+    width: 21cm; /* A4 width */
+    min-height: 29.7cm; /* A4 height */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 2cm; /* Standard margin for a document */
+    box-sizing: border-box;
+  }
+  .header {
+    background-color: #e30613;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin: -2cm -2cm 20px -2cm; /* Adjust to span full width of the container */
+  }
+  .header h3 {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.4;
+  }
+  p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .line {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    min-width: 150px; /* Adjust as needed */
+  }
+  .full-line {
+    border-bottom: 1px solid black;
+    display: block;
+    width: 100%;
+  }
+  .indent {
+    margin-left: 30px;
+  }
+  .section-number {
+    display: inline-block;
+    width: 20px; /* Space for the number */
+    vertical-align: top;
+  }
+  .signature-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .date-signature {
+    flex-grow: 1;
+  }
+  .date-signature span {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    width: 150px; /* Adjust as needed */
+  }
+  .notes {
+    margin-top: 40px;
+    font-size: 0.85em;
+  }
+  .notes p {
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h3>SELF-DECLARATION FROM THE HEAD OF FAMILY (HOF) FOR SHARING ADDRESS<br> WITH IMMEDIATE FAMILY MEMBER RESIDING AT THE SAME ADDRESS</h3>
+  </div>
+
+  <p>I, <span class="line full-line"></span> (Name as in Aadhaar), resident of <span class="line full-line"></span><br> <span class="line full-line"></span> (Address as provided in Aadhaar) holding Aadhaar Number<span class="line"></span>, do hereby solemnly affirm and declare as under:-</p>
+
+  <p class="indent"><span class="section-number">i.</span> That resident Mr./Ms.<span class="line"></span> holding Aadhaar number <span class="line"></span> is related to me as my <span class="line"></span><br> <span class="line full-line"></span> (Please specify the relation with applicant) and is residing with me at the above mentioned address.</p>
+
+  <p class="indent"><span class="section-number">ii.</span> That I agree to share my address in my Aadhaar with Mr./Ms. <span class="line full-line"></span><br> <span class="line"></span> for updating his/her address in Aadhaar in my capacity of Head of the Family (HoF).</p>
+
+  <p class="indent"><span class="section-number">iii.</span> That the undersigned undertakes that, the above mentioned information is correct to the best of my knowledge and belief and at any point of time if any of the said information is found to be incorrect/fraudulent/false, the Aadhaar of Mr./Ms.<br><span class="line full-line"></span> and mine can be deactivated and legal action may be initiated against me, as per the provisions of the Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act, 2016 (18 of 2016) and, Regulations framed there under and other applicable Acts and Rules, etc.</p>
+
+  <div class="signature-section">
+    <div class="date-signature">
+      <p><b>Date</b> <span class="line">DD/MM/YYYY</span></p>
+    </div>
+    <div class="date-signature" style="text-align: right;">
+      <p><b>Name & Signature of Head of the Family (HoF)</b></p>
+    </div>
+  </div>
+
+  <div class="notes">
+    <p><b>Note:</b></p>
+    <p><i>1. This document is valid for Head of Family (HoF) based Aadhaar address update purpose only.</i></p>
+    <p><i>2. This document is valid for 3 months from date of issue.</i></p>
+  </div>
+</div>
+
+</body>
+</html>
