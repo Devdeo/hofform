@@ -622,88 +622,103 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div style={{ textAlign: "right", flexGrow: 1 }}>
-              <p style={{ marginBottom: "5px" }}>
-                <b>Name & Signature of Head of the Family (HoF)</b>
-              </p>
               {isPreview ? (
-                signatureData && (
-                  <img
-                    src={signatureData}
-                    alt="Signature"
-                    style={{ border: "1px solid #ccc", maxWidth: "250px", height: "auto" }}
-                  />
-                )
-              ) : (
-                <div>
-                  <input
-                    type="file"
-                    ref={fileInputRef}
-                    onChange={handleFileChange}
-                    accept="image/*"
-                    style={{ display: "none" }}
-                  />
-                  {signatureData ? (
-                    <div>
-                      <img
-                        src={signatureData}
-                        alt="Uploaded Signature"
-                        style={{ border: "2px solid #e30613", maxWidth: "250px", height: "auto", marginBottom: "5px" }}
-                      />
-                    </div>
-                  ) : (
-                    <SignatureCanvas
-                      ref={sigCanvas}
-                      penColor="blue"
-                      canvasProps={{
-                        width: 250,
-                        height: 100,
-                        className: "signature-canvas",
-                        style: { border: "2px solid #e30613", backgroundColor: "#fff" },
-                      }}
+                <>
+                  {signatureData && (
+                    <img
+                      src={signatureData}
+                      alt="Signature"
+                      style={{ maxWidth: "200px", height: "auto", marginBottom: "5px" }}
                     />
                   )}
-                  <div style={{ marginTop: "5px", display: "flex", gap: "5px", justifyContent: "flex-end" }}>
-                    <button
-                      onClick={handleUploadSignature}
-                      style={{
-                        backgroundColor: "#2196F3",
-                        color: "white",
-                        padding: "5px 10px",
-                        border: "none",
-                        borderRadius: "3px",
-                        fontSize: "12px",
-                        cursor: "pointer",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "4px",
-                      }}
-                    >
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                        <polyline points="17 8 12 3 7 8" />
-                        <line x1="12" y1="3" x2="12" y2="15" />
-                      </svg>
-                      Upload Sign
-                    </button>
-                    <button
-                      onClick={clearSignature}
-                      style={{
-                        backgroundColor: "#666",
-                        color: "white",
-                        padding: "5px 10px",
-                        border: "none",
-                        borderRadius: "3px",
-                        fontSize: "12px",
-                        cursor: "pointer",
-                      }}
-                    >
-                      Clear
-                    </button>
+                  <p style={{ marginBottom: "0" }}>
+                    <b>Name & Signature of Head of the Family (HoF)</b>
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p style={{ marginBottom: "5px" }}>
+                    <b>Name & Signature of Head of the Family (HoF)</b>
+                  </p>
+                  <div>
+                    <input
+                      type="file"
+                      ref={fileInputRef}
+                      onChange={handleFileChange}
+                      accept="image/*"
+                      style={{ display: "none" }}
+                    />
+                    {signatureData ? (
+                      <div>
+                        <img
+                          src={signatureData}
+                          alt="Uploaded Signature"
+                          style={{ border: "2px solid #e30613", maxWidth: "250px", height: "auto", marginBottom: "5px" }}
+                        />
+                      </div>
+                    ) : (
+                      <SignatureCanvas
+                        ref={sigCanvas}
+                        penColor="blue"
+                        canvasProps={{
+                          width: 250,
+                          height: 100,
+                          className: "signature-canvas",
+                          style: { border: "2px solid #e30613", backgroundColor: "#fff" },
+                        }}
+                      />
+                    )}
+                    <div style={{ marginTop: "5px", display: "flex", gap: "5px", justifyContent: "flex-end" }}>
+                      <button
+                        onClick={handleUploadSignature}
+                        style={{
+                          backgroundColor: "#2196F3",
+                          color: "white",
+                          padding: "5px 10px",
+                          border: "none",
+                          borderRadius: "3px",
+                          fontSize: "12px",
+                          cursor: "pointer",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "4px",
+                        }}
+                      >
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                          <polyline points="17 8 12 3 7 8" />
+                          <line x1="12" y1="3" x2="12" y2="15" />
+                        </svg>
+                        Upload Sign
+                      </button>
+                      <button
+                        onClick={clearSignature}
+                        style={{
+                          backgroundColor: "#666",
+                          color: "white",
+                          padding: "5px 10px",
+                          border: "none",
+                          borderRadius: "3px",
+                          fontSize: "12px",
+                          cursor: "pointer",
+                        }}
+                      >
+                        Clear
+                      </button>
+                    </div>
                   </div>
-                </div>
+                </>
               )}
             </div>
           </div>
+
+          {isPreview && (
+            <div style={{ marginTop: "30px", fontSize: "12px" }}>
+              <p style={{ marginBottom: "5px" }}><b>Note:</b></p>
+              <p style={{ margin: "0 0 3px 0", fontStyle: "italic" }}>1. This document is valid for Head of Family (HoF) based Aadhaar address update purpose only.</p>
+              <p style={{ margin: "0", fontStyle: "italic" }}>2. This document is valid for 3 months from date of issue</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
