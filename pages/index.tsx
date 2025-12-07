@@ -31,6 +31,12 @@ const filledTextStyle: React.CSSProperties = {
   letterSpacing: "0.5px",
 };
 
+const formatDate = (dateString: string): string => {
+  if (!dateString) return "";
+  const [year, month, day] = dateString.split("-");
+  return `${day}/${month}/${year}`;
+};
+
 const Home: NextPage = () => {
   const [formData, setFormData] = useState<FormData>({
     hofName: "",
@@ -595,7 +601,7 @@ const Home: NextPage = () => {
                 <b>Date:</b>{" "}
                 {isPreview ? (
                   <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
-                    {formData.date || "\u00A0"}
+                    {formatDate(formData.date) || "\u00A0"}
                   </span>
                 ) : (
                   <input
