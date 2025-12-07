@@ -161,6 +161,7 @@ const Home: NextPage = () => {
         quality: 1,
         pixelRatio: 2,
         backgroundColor: "#ffffff",
+        skipFonts: true,
       });
 
       const pdf = new jsPDF({
