@@ -358,298 +358,87 @@ const Home: NextPage = () => {
             </h3>
           </div>
 
-          <div style={{ marginBottom: "20px", lineHeight: "2.0", fontSize: "14px" }}>
-            <p style={{ marginBottom: "0", textAlign: "left" }}>
-              I,{" "}
-              {isPreview ? (
-                <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "300px", paddingBottom: "2px", ...filledTextStyle }}>
-                  {formData.hofName || "\u00A0"}
-                </span>
-              ) : (
-                <input
-                  type="text"
-                  name="hofName"
-                  value={formData.hofName}
-                  onChange={handleInputChange}
-                  placeholder="Name as in Aadhaar"
-                  style={{
-                    border: "none",
-                    borderBottom: "2px solid #e30613",
-                    minWidth: "300px",
-                    fontSize: "14px",
-                    padding: "2px 4px",
-                    outline: "none",
-                  }}
-                />
-              )}{" "}
-              (Name as in Aadhaar), resident
+          <div style={{ marginBottom: "25px", fontSize: "14px", lineHeight: "2.4" }}>
+            <p style={{ margin: "0" }}>
+              I, <span style={{ borderBottom: "1px solid black", ...filledTextStyle, display: "inline" }}>{isPreview ? (formData.hofName || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0") : <input type="text" name="hofName" value={formData.hofName} onChange={handleInputChange} placeholder="Name as in Aadhaar" style={{ border: "none", borderBottom: "2px solid #e30613", width: "250px", fontSize: "14px", padding: "2px 4px", outline: "none" }} />}</span> (Name as in Aadhaar), resident
             </p>
-            <p style={{ marginBottom: "0", textAlign: "left" }}>
-              of{" "}
-              {isPreview ? (
-                <span style={{ borderBottom: "1px solid black", display: "inline-block", width: "calc(100% - 30px)", paddingBottom: "2px", ...filledTextStyle }}>
-                  {formData.hofAddress1 || "\u00A0"}
-                </span>
-              ) : (
-                <input
-                  type="text"
-                  name="hofAddress1"
-                  value={formData.hofAddress1}
-                  onChange={handleInputChange}
-                  placeholder="Address line 1"
-                  style={{
-                    border: "none",
-                    borderBottom: "2px solid #e30613",
-                    width: "calc(100% - 30px)",
-                    fontSize: "14px",
-                    padding: "2px 4px",
-                    outline: "none",
-                  }}
-                />
-              )}
+            <p style={{ margin: "0" }}>
+              of <span style={{ borderBottom: "1px solid black", ...filledTextStyle, display: "inline" }}>{isPreview ? (formData.hofAddress1 || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0") : <input type="text" name="hofAddress1" value={formData.hofAddress1} onChange={handleInputChange} placeholder="Address line 1" style={{ border: "none", borderBottom: "2px solid #e30613", width: "90%", fontSize: "14px", padding: "2px 4px", outline: "none" }} />}</span>
             </p>
-            <p style={{ marginBottom: "0", textAlign: "left" }}>
-              {isPreview ? (
-                <span style={{ borderBottom: "1px solid black", display: "inline-block", width: "100%", paddingBottom: "2px", ...filledTextStyle }}>
-                  {formData.hofAddress2 || "\u00A0"}
-                </span>
-              ) : (
-                <input
-                  type="text"
-                  name="hofAddress2"
-                  value={formData.hofAddress2}
-                  onChange={handleInputChange}
-                  placeholder="Address line 2"
-                  style={{
-                    border: "none",
-                    borderBottom: "2px solid #e30613",
-                    width: "100%",
-                    fontSize: "14px",
-                    padding: "2px 4px",
-                    outline: "none",
-                  }}
-                />
-              )}
+            <p style={{ margin: "0" }}>
+              <span style={{ borderBottom: "1px solid black", ...filledTextStyle, display: "inline" }}>{isPreview ? (formData.hofAddress2 || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0") : <input type="text" name="hofAddress2" value={formData.hofAddress2} onChange={handleInputChange} placeholder="Address line 2" style={{ border: "none", borderBottom: "2px solid #e30613", width: "100%", fontSize: "14px", padding: "2px 4px", outline: "none" }} />}</span>
             </p>
-            <p style={{ marginBottom: "0", textAlign: "left" }}>
-              (Address as provided in Aadhaar) holding Aadhaar Number{" "}
-              {isPreview ? (
-                <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "200px", paddingBottom: "2px", ...filledTextStyle }}>
-                  {formData.hofAadhaar || "\u00A0"}
-                </span>
-              ) : (
-                <input
-                  type="text"
-                  name="hofAadhaar"
-                  value={formData.hofAadhaar}
-                  onChange={handleInputChange}
-                  placeholder="Aadhaar Number"
-                  style={{
-                    border: "none",
-                    borderBottom: "2px solid #e30613",
-                    minWidth: "200px",
-                    fontSize: "14px",
-                    padding: "2px 4px",
-                    outline: "none",
-                  }}
-                />
-              )}
-              , do
+            <p style={{ margin: "0" }}>
+              (Address as provided in Aadhaar) holding Aadhaar Number <span style={{ borderBottom: "1px solid black", ...filledTextStyle, display: "inline" }}>{isPreview ? (formData.hofAadhaar || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0") : <input type="text" name="hofAadhaar" value={formData.hofAadhaar} onChange={handleInputChange} placeholder="Aadhaar Number" style={{ border: "none", borderBottom: "2px solid #e30613", width: "180px", fontSize: "14px", padding: "2px 4px", outline: "none" }} />}</span>, do
             </p>
-            <p style={{ marginBottom: "0", textAlign: "left" }}>
+            <p style={{ margin: "0" }}>
               hereby solemnly affirm and declare as under:-
             </p>
           </div>
 
-          <div style={{ marginBottom: "20px", fontSize: "14px", lineHeight: "2.0" }}>
-            <div style={{ display: "flex", marginBottom: "0" }}>
+          <div style={{ marginBottom: "25px", fontSize: "14px", lineHeight: "2.4" }}>
+            <div style={{ display: "flex" }}>
               <span style={{ minWidth: "30px" }}>i.</span>
-              <div style={{ flex: 1, textAlign: "left" }}>
-                <p style={{ marginBottom: "0" }}>
-                  That resident Mr./Ms.{" "}
-                  {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "200px", paddingBottom: "2px", ...filledTextStyle }}>
-                      {formData.residentName || "\u00A0"}
-                    </span>
-                  ) : (
-                    <input
-                      type="text"
-                      name="residentName"
-                      value={formData.residentName}
-                      onChange={handleInputChange}
-                      placeholder="Resident Name"
-                      style={{
-                        border: "none",
-                        borderBottom: "2px solid #e30613",
-                        minWidth: "200px",
-                        fontSize: "14px",
-                        padding: "2px 4px",
-                        outline: "none",
-                      }}
-                    />
-                  )}{" "}
-                  holding Aadhaar number
+              <div style={{ flex: 1 }}>
+                <p style={{ margin: "0" }}>
+                  That resident Mr./Ms. <span style={{ borderBottom: "1px solid black", ...filledTextStyle, display: "inline" }}>{isPreview ? (formData.residentName || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0") : <input type="text" name="residentName" value={formData.residentName} onChange={handleInputChange} placeholder="Resident Name" style={{ border: "none", borderBottom: "2px solid #e30613", width: "180px", fontSize: "14px", padding: "2px 4px", outline: "none" }} />}</span> holding Aadhaar number
                 </p>
-                <p style={{ marginBottom: "0" }}>
-                  {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "180px", paddingBottom: "2px", ...filledTextStyle }}>
-                      {formData.residentAadhaar || "\u00A0"}
-                    </span>
-                  ) : (
-                    <input
-                      type="text"
-                      name="residentAadhaar"
-                      value={formData.residentAadhaar}
-                      onChange={handleInputChange}
-                      placeholder="Resident Aadhaar"
-                      style={{
-                        border: "none",
-                        borderBottom: "2px solid #e30613",
-                        minWidth: "180px",
-                        fontSize: "14px",
-                        padding: "2px 4px",
-                        outline: "none",
-                      }}
-                    />
-                  )}{" "}
-                  is related to me as my{" "}
-                  {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
-                      {formData.relationship || "\u00A0"}
-                    </span>
-                  ) : (
-                    <input
-                      type="text"
-                      name="relationship"
-                      value={formData.relationship}
-                      onChange={handleInputChange}
-                      placeholder="Relationship"
-                      style={{
-                        border: "none",
-                        borderBottom: "2px solid #e30613",
-                        minWidth: "150px",
-                        fontSize: "14px",
-                        padding: "2px 4px",
-                        outline: "none",
-                      }}
-                    />
-                  )}
+                <p style={{ margin: "0" }}>
+                  <span style={{ borderBottom: "1px solid black", ...filledTextStyle, display: "inline" }}>{isPreview ? (formData.residentAadhaar || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0") : <input type="text" name="residentAadhaar" value={formData.residentAadhaar} onChange={handleInputChange} placeholder="Resident Aadhaar" style={{ border: "none", borderBottom: "2px solid #e30613", width: "180px", fontSize: "14px", padding: "2px 4px", outline: "none" }} />}</span> is related to me as my <span style={{ borderBottom: "1px solid black", ...filledTextStyle, display: "inline" }}>{isPreview ? (formData.relationship || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0") : <input type="text" name="relationship" value={formData.relationship} onChange={handleInputChange} placeholder="Relationship" style={{ border: "none", borderBottom: "2px solid #e30613", width: "150px", fontSize: "14px", padding: "2px 4px", outline: "none" }} />}</span>
                 </p>
-                <p style={{ marginBottom: "0" }}>
-                  {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
-                      {"\u00A0"}
-                    </span>
-                  ) : (
-                    <span style={{ borderBottom: "2px solid #e30613", display: "inline-block", minWidth: "150px" }}></span>
-                  )}{" "}
-                  (Please specify the relation with applicant) and is
+                <p style={{ margin: "0" }}>
+                  <span style={{ borderBottom: "1px solid black", display: "inline" }}>{"\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}</span> (Please specify the relation with applicant) and is
                 </p>
-                <p style={{ marginBottom: "0" }}>
+                <p style={{ margin: "0" }}>
                   residing with me at the above mentioned address.
                 </p>
               </div>
             </div>
           </div>
 
-          <div style={{ marginBottom: "20px", fontSize: "14px", lineHeight: "2.0" }}>
-            <div style={{ display: "flex", marginBottom: "0" }}>
+          <div style={{ marginBottom: "25px", fontSize: "14px", lineHeight: "2.4" }}>
+            <div style={{ display: "flex" }}>
               <span style={{ minWidth: "30px" }}>ii.</span>
-              <div style={{ flex: 1, textAlign: "left" }}>
-                <p style={{ marginBottom: "0" }}>
-                  That I agree to share my address in my Aadhaar with Mr./Ms.{" "}
-                  {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
-                      {formData.residentName2 || "\u00A0"}
-                    </span>
-                  ) : (
-                    <input
-                      type="text"
-                      name="residentName2"
-                      value={formData.residentName2}
-                      onChange={handleInputChange}
-                      placeholder="Resident Name"
-                      style={{
-                        border: "none",
-                        borderBottom: "2px solid #e30613",
-                        minWidth: "150px",
-                        fontSize: "14px",
-                        padding: "2px 4px",
-                        outline: "none",
-                      }}
-                    />
-                  )}
+              <div style={{ flex: 1 }}>
+                <p style={{ margin: "0" }}>
+                  That I agree to share my address in my Aadhaar with Mr./Ms. <span style={{ borderBottom: "1px solid black", ...filledTextStyle, display: "inline" }}>{isPreview ? (formData.residentName2 || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0") : <input type="text" name="residentName2" value={formData.residentName2} onChange={handleInputChange} placeholder="Resident Name" style={{ border: "none", borderBottom: "2px solid #e30613", width: "150px", fontSize: "14px", padding: "2px 4px", outline: "none" }} />}</span>
                 </p>
-                <p style={{ marginBottom: "0" }}>
-                  {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
-                      {"\u00A0"}
-                    </span>
-                  ) : (
-                    <span style={{ borderBottom: "2px solid #e30613", display: "inline-block", minWidth: "150px" }}></span>
-                  )}{" "}
-                  for updating his/her address in Aadhaar in my capacity of
+                <p style={{ margin: "0" }}>
+                  <span style={{ borderBottom: "1px solid black", display: "inline" }}>{"\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}</span> for updating his/her address in Aadhaar in my capacity of
                 </p>
-                <p style={{ marginBottom: "0" }}>
+                <p style={{ margin: "0" }}>
                   Head of the Family (HoF).
                 </p>
               </div>
             </div>
           </div>
 
-          <div style={{ marginBottom: "20px", fontSize: "14px", lineHeight: "2.0" }}>
-            <div style={{ display: "flex", marginBottom: "0" }}>
+          <div style={{ marginBottom: "25px", fontSize: "14px", lineHeight: "2.4" }}>
+            <div style={{ display: "flex" }}>
               <span style={{ minWidth: "30px" }}>iii.</span>
-              <div style={{ flex: 1, textAlign: "left" }}>
-                <p style={{ marginBottom: "0" }}>
+              <div style={{ flex: 1 }}>
+                <p style={{ margin: "0" }}>
                   That the undersigned undertakes that, the above mentioned information is correct to the best of
                 </p>
-                <p style={{ marginBottom: "0" }}>
+                <p style={{ margin: "0" }}>
                   my knowledge and belief and at any point of time if any of the said information is found to be
                 </p>
-                <p style={{ marginBottom: "0" }}>
+                <p style={{ margin: "0" }}>
                   incorrect/fraudulent/false, the Aadhaar of Mr./Ms.
                 </p>
-                <p style={{ marginBottom: "0" }}>
-                  {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
-                      {formData.residentName3 || "\u00A0"}
-                    </span>
-                  ) : (
-                    <input
-                      type="text"
-                      name="residentName3"
-                      value={formData.residentName3}
-                      onChange={handleInputChange}
-                      placeholder="Resident Name"
-                      style={{
-                        border: "none",
-                        borderBottom: "2px solid #e30613",
-                        minWidth: "150px",
-                        fontSize: "14px",
-                        padding: "2px 4px",
-                        outline: "none",
-                      }}
-                    />
-                  )}{" "}
-                  and mine can be deactivated and legal action
+                <p style={{ margin: "0" }}>
+                  <span style={{ borderBottom: "1px solid black", ...filledTextStyle, display: "inline" }}>{isPreview ? (formData.residentName3 || "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0") : <input type="text" name="residentName3" value={formData.residentName3} onChange={handleInputChange} placeholder="Resident Name" style={{ border: "none", borderBottom: "2px solid #e30613", width: "150px", fontSize: "14px", padding: "2px 4px", outline: "none" }} />}</span> and mine can be deactivated and legal action
                 </p>
-                <p style={{ marginBottom: "0" }}>
-                  {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "200px", paddingBottom: "2px", ...filledTextStyle }}>
-                      {"\u00A0"}
-                    </span>
-                  ) : (
-                    <span style={{ borderBottom: "2px solid #e30613", display: "inline-block", minWidth: "200px" }}></span>
-                  )}
+                <p style={{ margin: "0" }}>
+                  <span style={{ borderBottom: "1px solid black", display: "inline" }}>{"\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}</span>
                 </p>
-                <p style={{ marginBottom: "0" }}>
+                <p style={{ margin: "0" }}>
                   may be initiated against me, as per the provisions of the Aadhaar (Targeted Delivery of Financial
                 </p>
-                <p style={{ marginBottom: "0" }}>
+                <p style={{ margin: "0" }}>
                   and Other Subsidies, Benefits and Services) Act, 2016 (18 of 2016) and, Regulations framed there
                 </p>
-                <p style={{ marginBottom: "0" }}>
+                <p style={{ margin: "0" }}>
                   under and other applicable Acts and Rules, etc.
                 </p>
               </div>
