@@ -357,8 +357,8 @@ const Home: NextPage = () => {
             </h3>
           </div>
 
-          <div style={{ marginBottom: "20px", lineHeight: "2", fontSize: "14px" }}>
-            <p style={{ marginBottom: "10px", textAlign: "justify" }}>
+          <div style={{ marginBottom: "15px", lineHeight: "1.8", fontSize: "14px" }}>
+            <p style={{ marginBottom: "8px", textAlign: "justify" }}>
               I,{" "}
               {isPreview ? (
                 <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "350px", paddingBottom: "2px", ...filledTextStyle }}>
@@ -383,7 +383,7 @@ const Home: NextPage = () => {
               )}{" "}
               (Name as in Aadhaar), resident
             </p>
-            <p style={{ marginBottom: "10px", textAlign: "justify" }}>
+            <p style={{ marginBottom: "8px", textAlign: "justify" }}>
               of{" "}
               {isPreview ? (
                 <span style={{ borderBottom: "1px solid black", display: "inline-block", width: "calc(100% - 30px)", paddingBottom: "2px", ...filledTextStyle }}>
@@ -407,7 +407,7 @@ const Home: NextPage = () => {
                 />
               )}
             </p>
-            <p style={{ marginBottom: "10px", textAlign: "justify" }}>
+            <p style={{ marginBottom: "8px", textAlign: "justify" }}>
               {isPreview ? (
                 <span style={{ borderBottom: "1px solid black", display: "inline-block", width: "100%", paddingBottom: "2px", ...filledTextStyle }}>
                   {formData.hofAddress2 || "\u00A0"}
@@ -429,10 +429,7 @@ const Home: NextPage = () => {
                   }}
                 />
               )}{" "}
-              (Address
-            </p>
-            <p style={{ marginBottom: "10px", textAlign: "justify" }}>
-              as provided in Aadhaar) holding Aadhaar Number{" "}
+              (Address as provided in Aadhaar) holding Aadhaar Number{" "}
               {isPreview ? (
                 <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "250px", paddingBottom: "2px", ...filledTextStyle }}>
                   {formData.hofAadhaar || "\u00A0"}
@@ -454,15 +451,12 @@ const Home: NextPage = () => {
                   }}
                 />
               )}
-              , do
-            </p>
-            <p style={{ marginBottom: "10px", textAlign: "justify" }}>
-              hereby solemnly affirm and declare as under:-
+              , do hereby solemnly affirm and declare as under:-
             </p>
           </div>
 
-          <div style={{ marginBottom: "20px", fontSize: "14px", lineHeight: "2" }}>
-            <div style={{ display: "flex", marginBottom: "10px" }}>
+          <div style={{ marginBottom: "15px", fontSize: "14px", lineHeight: "1.8" }}>
+            <div style={{ display: "flex", marginBottom: "8px" }}>
               <span style={{ minWidth: "30px" }}>i.</span>
               <div style={{ flex: 1, textAlign: "justify" }}>
                 <p style={{ margin: 0 }}>
@@ -552,8 +546,8 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div style={{ marginBottom: "20px", fontSize: "14px", lineHeight: "2" }}>
-            <div style={{ display: "flex", marginBottom: "10px" }}>
+          <div style={{ marginBottom: "15px", fontSize: "14px", lineHeight: "1.8" }}>
+            <div style={{ display: "flex", marginBottom: "8px" }}>
               <span style={{ minWidth: "30px" }}>ii.</span>
               <div style={{ flex: 1, textAlign: "justify" }}>
                 <p style={{ margin: 0 }}>
@@ -597,8 +591,8 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div style={{ marginBottom: "20px", fontSize: "14px", lineHeight: "2" }}>
-            <div style={{ display: "flex", marginBottom: "10px" }}>
+          <div style={{ marginBottom: "15px", fontSize: "14px", lineHeight: "1.8" }}>
+            <div style={{ display: "flex", marginBottom: "8px" }}>
               <span style={{ minWidth: "30px" }}>iii.</span>
               <div style={{ flex: 1, textAlign: "justify" }}>
                 <p style={{ margin: 0 }}>
