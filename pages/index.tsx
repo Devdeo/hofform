@@ -357,11 +357,11 @@ const Home: NextPage = () => {
             </h3>
           </div>
 
-          <div style={{ marginBottom: "25px", lineHeight: "2.2", fontSize: "14px" }}>
-            <p style={{ marginBottom: "18px", textAlign: "justify" }}>
+          <div style={{ marginBottom: "20px", lineHeight: "2.0", fontSize: "14px" }}>
+            <p style={{ marginBottom: "0", textAlign: "left" }}>
               I,{" "}
               {isPreview ? (
-                <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "350px", paddingBottom: "2px", ...filledTextStyle }}>
+                <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "300px", paddingBottom: "2px", ...filledTextStyle }}>
                   {formData.hofName || "\u00A0"}
                 </span>
               ) : (
@@ -374,7 +374,7 @@ const Home: NextPage = () => {
                   style={{
                     border: "none",
                     borderBottom: "2px solid #e30613",
-                    minWidth: "350px",
+                    minWidth: "300px",
                     fontSize: "14px",
                     padding: "2px 4px",
                     outline: "none",
@@ -383,7 +383,7 @@ const Home: NextPage = () => {
               )}{" "}
               (Name as in Aadhaar), resident
             </p>
-            <p style={{ marginBottom: "18px", textAlign: "justify" }}>
+            <p style={{ marginBottom: "0", textAlign: "left" }}>
               of{" "}
               {isPreview ? (
                 <span style={{ borderBottom: "1px solid black", display: "inline-block", width: "calc(100% - 30px)", paddingBottom: "2px", ...filledTextStyle }}>
@@ -407,7 +407,7 @@ const Home: NextPage = () => {
                 />
               )}
             </p>
-            <p style={{ marginBottom: "18px", textAlign: "justify" }}>
+            <p style={{ marginBottom: "0", textAlign: "left" }}>
               {isPreview ? (
                 <span style={{ borderBottom: "1px solid black", display: "inline-block", width: "100%", paddingBottom: "2px", ...filledTextStyle }}>
                   {formData.hofAddress2 || "\u00A0"}
@@ -428,10 +428,12 @@ const Home: NextPage = () => {
                     outline: "none",
                   }}
                 />
-              )}{" "}
+              )}
+            </p>
+            <p style={{ marginBottom: "0", textAlign: "left" }}>
               (Address as provided in Aadhaar) holding Aadhaar Number{" "}
               {isPreview ? (
-                <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "250px", paddingBottom: "2px", ...filledTextStyle }}>
+                <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "200px", paddingBottom: "2px", ...filledTextStyle }}>
                   {formData.hofAadhaar || "\u00A0"}
                 </span>
               ) : (
@@ -444,25 +446,28 @@ const Home: NextPage = () => {
                   style={{
                     border: "none",
                     borderBottom: "2px solid #e30613",
-                    minWidth: "250px",
+                    minWidth: "200px",
                     fontSize: "14px",
                     padding: "2px 4px",
                     outline: "none",
                   }}
                 />
               )}
-              , do hereby solemnly affirm and declare as under:-
+              , do
+            </p>
+            <p style={{ marginBottom: "0", textAlign: "left" }}>
+              hereby solemnly affirm and declare as under:-
             </p>
           </div>
 
-          <div style={{ marginBottom: "30px", fontSize: "14px", lineHeight: "2.2" }}>
-            <div style={{ display: "flex", marginBottom: "18px" }}>
-              <span style={{ minWidth: "40px" }}>i.</span>
-              <div style={{ flex: 1, textAlign: "justify" }}>
-                <p style={{ marginBottom: "18px" }}>
+          <div style={{ marginBottom: "20px", fontSize: "14px", lineHeight: "2.0" }}>
+            <div style={{ display: "flex", marginBottom: "0" }}>
+              <span style={{ minWidth: "30px" }}>i.</span>
+              <div style={{ flex: 1, textAlign: "left" }}>
+                <p style={{ marginBottom: "0" }}>
                   That resident Mr./Ms.{" "}
                   {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "220px", paddingBottom: "2px", ...filledTextStyle }}>
+                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "200px", paddingBottom: "2px", ...filledTextStyle }}>
                       {formData.residentName || "\u00A0"}
                     </span>
                   ) : (
@@ -475,7 +480,7 @@ const Home: NextPage = () => {
                       style={{
                         border: "none",
                         borderBottom: "2px solid #e30613",
-                        minWidth: "220px",
+                        minWidth: "200px",
                         fontSize: "14px",
                         padding: "2px 4px",
                         outline: "none",
@@ -484,7 +489,7 @@ const Home: NextPage = () => {
                   )}{" "}
                   holding Aadhaar number
                 </p>
-                <p style={{ marginBottom: "18px" }}>
+                <p style={{ marginBottom: "0" }}>
                   {isPreview ? (
                     <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "180px", paddingBottom: "2px", ...filledTextStyle }}>
                       {formData.residentAadhaar || "\u00A0"}
@@ -508,7 +513,7 @@ const Home: NextPage = () => {
                   )}{" "}
                   is related to me as my{" "}
                   {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "180px", paddingBottom: "2px", ...filledTextStyle }}>
+                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
                       {formData.relationship || "\u00A0"}
                     </span>
                   ) : (
@@ -521,7 +526,7 @@ const Home: NextPage = () => {
                       style={{
                         border: "none",
                         borderBottom: "2px solid #e30613",
-                        minWidth: "180px",
+                        minWidth: "150px",
                         fontSize: "14px",
                         padding: "2px 4px",
                         outline: "none",
@@ -529,28 +534,28 @@ const Home: NextPage = () => {
                     />
                   )}
                 </p>
-                <p style={{ marginBottom: "18px" }}>
+                <p style={{ marginBottom: "0" }}>
                   {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "200px", paddingBottom: "2px", ...filledTextStyle }}>
+                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
                       {"\u00A0"}
                     </span>
                   ) : (
-                    <span style={{ borderBottom: "2px solid #e30613", display: "inline-block", minWidth: "200px" }}></span>
+                    <span style={{ borderBottom: "2px solid #e30613", display: "inline-block", minWidth: "150px" }}></span>
                   )}{" "}
                   (Please specify the relation with applicant) and is
                 </p>
-                <p style={{ marginBottom: "18px" }}>
+                <p style={{ marginBottom: "0" }}>
                   residing with me at the above mentioned address.
                 </p>
               </div>
             </div>
           </div>
 
-          <div style={{ marginBottom: "30px", fontSize: "14px", lineHeight: "2.2" }}>
-            <div style={{ display: "flex", marginBottom: "18px" }}>
-              <span style={{ minWidth: "40px" }}>ii.</span>
-              <div style={{ flex: 1, textAlign: "justify" }}>
-                <p style={{ marginBottom: "18px" }}>
+          <div style={{ marginBottom: "20px", fontSize: "14px", lineHeight: "2.0" }}>
+            <div style={{ display: "flex", marginBottom: "0" }}>
+              <span style={{ minWidth: "30px" }}>ii.</span>
+              <div style={{ flex: 1, textAlign: "left" }}>
+                <p style={{ marginBottom: "0" }}>
                   That I agree to share my address in my Aadhaar with Mr./Ms.{" "}
                   {isPreview ? (
                     <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
@@ -574,33 +579,39 @@ const Home: NextPage = () => {
                     />
                   )}
                 </p>
-                <p style={{ marginBottom: "18px" }}>
+                <p style={{ marginBottom: "0" }}>
                   {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "180px", paddingBottom: "2px", ...filledTextStyle }}>
+                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
                       {"\u00A0"}
                     </span>
                   ) : (
-                    <span style={{ borderBottom: "2px solid #e30613", display: "inline-block", minWidth: "180px" }}></span>
+                    <span style={{ borderBottom: "2px solid #e30613", display: "inline-block", minWidth: "150px" }}></span>
                   )}{" "}
                   for updating his/her address in Aadhaar in my capacity of
                 </p>
-                <p style={{ marginBottom: "18px" }}>
+                <p style={{ marginBottom: "0" }}>
                   Head of the Family (HoF).
                 </p>
               </div>
             </div>
           </div>
 
-          <div style={{ marginBottom: "30px", fontSize: "14px", lineHeight: "2.2" }}>
-            <div style={{ display: "flex", marginBottom: "18px" }}>
-              <span style={{ minWidth: "40px" }}>iii.</span>
-              <div style={{ flex: 1, textAlign: "justify" }}>
-                <p style={{ marginBottom: "18px" }}>
-                  That the undersigned undertakes that, the above mentioned information is correct to the best of my knowledge and belief and at any point of time if any of the said information is found to be incorrect/fraudulent/false, the Aadhaar of Mr./Ms.
+          <div style={{ marginBottom: "20px", fontSize: "14px", lineHeight: "2.0" }}>
+            <div style={{ display: "flex", marginBottom: "0" }}>
+              <span style={{ minWidth: "30px" }}>iii.</span>
+              <div style={{ flex: 1, textAlign: "left" }}>
+                <p style={{ marginBottom: "0" }}>
+                  That the undersigned undertakes that, the above mentioned information is correct to the best of
                 </p>
-                <p style={{ marginBottom: "18px" }}>
+                <p style={{ marginBottom: "0" }}>
+                  my knowledge and belief and at any point of time if any of the said information is found to be
+                </p>
+                <p style={{ marginBottom: "0" }}>
+                  incorrect/fraudulent/false, the Aadhaar of Mr./Ms.
+                </p>
+                <p style={{ marginBottom: "0" }}>
                   {isPreview ? (
-                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "220px", paddingBottom: "2px", ...filledTextStyle }}>
+                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
                       {formData.residentName3 || "\u00A0"}
                     </span>
                   ) : (
@@ -613,7 +624,7 @@ const Home: NextPage = () => {
                       style={{
                         border: "none",
                         borderBottom: "2px solid #e30613",
-                        minWidth: "220px",
+                        minWidth: "150px",
                         fontSize: "14px",
                         padding: "2px 4px",
                         outline: "none",
@@ -622,8 +633,23 @@ const Home: NextPage = () => {
                   )}{" "}
                   and mine can be deactivated and legal action
                 </p>
-                <p style={{ marginBottom: "18px" }}>
-                  may be initiated against me, as per the provisions of the Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act, 2016 (18 of 2016) and, Regulations framed there under and other applicable Acts and Rules, etc.
+                <p style={{ marginBottom: "0" }}>
+                  {isPreview ? (
+                    <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "200px", paddingBottom: "2px", ...filledTextStyle }}>
+                      {"\u00A0"}
+                    </span>
+                  ) : (
+                    <span style={{ borderBottom: "2px solid #e30613", display: "inline-block", minWidth: "200px" }}></span>
+                  )}
+                </p>
+                <p style={{ marginBottom: "0" }}>
+                  may be initiated against me, as per the provisions of the Aadhaar (Targeted Delivery of Financial
+                </p>
+                <p style={{ marginBottom: "0" }}>
+                  and Other Subsidies, Benefits and Services) Act, 2016 (18 of 2016) and, Regulations framed there
+                </p>
+                <p style={{ marginBottom: "0" }}>
+                  under and other applicable Acts and Rules, etc.
                 </p>
               </div>
             </div>
