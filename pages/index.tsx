@@ -27,7 +27,7 @@ const filledTextStyle: React.CSSProperties = {
   fontFamily: "'Caveat', cursive",
   color: "#0000CD",
   fontWeight: "bold",
-  fontSize: "24px",
+  fontSize: "30px",
   letterSpacing: "0.5px",
 };
 
