@@ -357,8 +357,8 @@ const Home: NextPage = () => {
             </h3>
           </div>
 
-          <div style={{ marginBottom: "15px", lineHeight: "1.8", fontSize: "14px" }}>
-            <p style={{ marginBottom: "8px", textAlign: "justify" }}>
+          <div style={{ marginBottom: "25px", lineHeight: "2.2", fontSize: "14px" }}>
+            <p style={{ marginBottom: "18px", textAlign: "justify" }}>
               I,{" "}
               {isPreview ? (
                 <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "350px", paddingBottom: "2px", ...filledTextStyle }}>
@@ -383,7 +383,7 @@ const Home: NextPage = () => {
               )}{" "}
               (Name as in Aadhaar), resident
             </p>
-            <p style={{ marginBottom: "8px", textAlign: "justify" }}>
+            <p style={{ marginBottom: "18px", textAlign: "justify" }}>
               of{" "}
               {isPreview ? (
                 <span style={{ borderBottom: "1px solid black", display: "inline-block", width: "calc(100% - 30px)", paddingBottom: "2px", ...filledTextStyle }}>
@@ -407,7 +407,7 @@ const Home: NextPage = () => {
                 />
               )}
             </p>
-            <p style={{ marginBottom: "8px", textAlign: "justify" }}>
+            <p style={{ marginBottom: "18px", textAlign: "justify" }}>
               {isPreview ? (
                 <span style={{ borderBottom: "1px solid black", display: "inline-block", width: "100%", paddingBottom: "2px", ...filledTextStyle }}>
                   {formData.hofAddress2 || "\u00A0"}
@@ -455,11 +455,11 @@ const Home: NextPage = () => {
             </p>
           </div>
 
-          <div style={{ marginBottom: "15px", fontSize: "14px", lineHeight: "1.8" }}>
-            <div style={{ display: "flex", marginBottom: "8px" }}>
-              <span style={{ minWidth: "30px" }}>i.</span>
+          <div style={{ marginBottom: "30px", fontSize: "14px", lineHeight: "2.2" }}>
+            <div style={{ display: "flex", marginBottom: "18px" }}>
+              <span style={{ minWidth: "40px" }}>i.</span>
               <div style={{ flex: 1, textAlign: "justify" }}>
-                <p style={{ margin: 0 }}>
+                <p style={{ marginBottom: "18px" }}>
                   That resident Mr./Ms.{" "}
                   {isPreview ? (
                     <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "220px", paddingBottom: "2px", ...filledTextStyle }}>
@@ -484,7 +484,7 @@ const Home: NextPage = () => {
                   )}{" "}
                   holding Aadhaar number
                 </p>
-                <p style={{ margin: 0 }}>
+                <p style={{ marginBottom: "18px" }}>
                   {isPreview ? (
                     <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "180px", paddingBottom: "2px", ...filledTextStyle }}>
                       {formData.residentAadhaar || "\u00A0"}
@@ -529,7 +529,7 @@ const Home: NextPage = () => {
                     />
                   )}
                 </p>
-                <p style={{ margin: 0 }}>
+                <p style={{ marginBottom: "18px" }}>
                   {isPreview ? (
                     <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "200px", paddingBottom: "2px", ...filledTextStyle }}>
                       {"\u00A0"}
@@ -539,18 +539,18 @@ const Home: NextPage = () => {
                   )}{" "}
                   (Please specify the relation with applicant) and is
                 </p>
-                <p style={{ margin: 0 }}>
+                <p style={{ marginBottom: "18px" }}>
                   residing with me at the above mentioned address.
                 </p>
               </div>
             </div>
           </div>
 
-          <div style={{ marginBottom: "15px", fontSize: "14px", lineHeight: "1.8" }}>
-            <div style={{ display: "flex", marginBottom: "8px" }}>
-              <span style={{ minWidth: "30px" }}>ii.</span>
+          <div style={{ marginBottom: "30px", fontSize: "14px", lineHeight: "2.2" }}>
+            <div style={{ display: "flex", marginBottom: "18px" }}>
+              <span style={{ minWidth: "40px" }}>ii.</span>
               <div style={{ flex: 1, textAlign: "justify" }}>
-                <p style={{ margin: 0 }}>
+                <p style={{ marginBottom: "18px" }}>
                   That I agree to share my address in my Aadhaar with Mr./Ms.{" "}
                   {isPreview ? (
                     <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "150px", paddingBottom: "2px", ...filledTextStyle }}>
@@ -574,7 +574,7 @@ const Home: NextPage = () => {
                     />
                   )}
                 </p>
-                <p style={{ margin: 0 }}>
+                <p style={{ marginBottom: "18px" }}>
                   {isPreview ? (
                     <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "180px", paddingBottom: "2px", ...filledTextStyle }}>
                       {"\u00A0"}
@@ -584,21 +584,21 @@ const Home: NextPage = () => {
                   )}{" "}
                   for updating his/her address in Aadhaar in my capacity of
                 </p>
-                <p style={{ margin: 0 }}>
+                <p style={{ marginBottom: "18px" }}>
                   Head of the Family (HoF).
                 </p>
               </div>
             </div>
           </div>
 
-          <div style={{ marginBottom: "15px", fontSize: "14px", lineHeight: "1.8" }}>
-            <div style={{ display: "flex", marginBottom: "8px" }}>
-              <span style={{ minWidth: "30px" }}>iii.</span>
+          <div style={{ marginBottom: "30px", fontSize: "14px", lineHeight: "2.2" }}>
+            <div style={{ display: "flex", marginBottom: "18px" }}>
+              <span style={{ minWidth: "40px" }}>iii.</span>
               <div style={{ flex: 1, textAlign: "justify" }}>
-                <p style={{ margin: 0 }}>
+                <p style={{ marginBottom: "18px" }}>
                   That the undersigned undertakes that, the above mentioned information is correct to the best of my knowledge and belief and at any point of time if any of the said information is found to be incorrect/fraudulent/false, the Aadhaar of Mr./Ms.
                 </p>
-                <p style={{ margin: 0 }}>
+                <p style={{ marginBottom: "18px" }}>
                   {isPreview ? (
                     <span style={{ borderBottom: "1px solid black", display: "inline-block", minWidth: "220px", paddingBottom: "2px", ...filledTextStyle }}>
                       {formData.residentName3 || "\u00A0"}
@@ -622,7 +622,7 @@ const Home: NextPage = () => {
                   )}{" "}
                   and mine can be deactivated and legal action
                 </p>
-                <p style={{ margin: 0 }}>
+                <p style={{ marginBottom: "18px" }}>
                   may be initiated against me, as per the provisions of the Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act, 2016 (18 of 2016) and, Regulations framed there under and other applicable Acts and Rules, etc.
                 </p>
               </div>
